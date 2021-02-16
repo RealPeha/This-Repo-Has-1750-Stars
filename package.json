@@ -1,0 +1,10 @@
+{
+  "name": "This-Repo-Has-X-Stars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^18.1.1",
+    "dotenv": "^8.2.0"
+  }
+}
