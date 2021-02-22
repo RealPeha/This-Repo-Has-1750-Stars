@@ -66,6 +66,6 @@ getRepoStars()
     .then(stars => {
         lastStars = stars
 
-        setTimeout(checkAndRenameRepo, checkInterval)
+        checkAndRenameRepo()
     })
     .catch(console.log)
