@@ -1,7 +1,7 @@
 require('dotenv').config()
 const { Octokit } = require('@octokit/rest')
 
-const checkInterval = 5000 // ms
+const checkInterval = 500 // ms
 
 const octokit = new Octokit({
     auth: process.env.GITHUB_TOKEN,
@@ -42,6 +42,6 @@ getRepoStars()
     .then(stars => {
         lastStars = stars
 
-        setTimeout(checkAndRenameRepo, checkInterval)
+        checkAndRenameRepo()
     })
     .catch(console.log)
