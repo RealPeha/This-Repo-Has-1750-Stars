@@ -6,5 +6,8 @@
   "dependencies": {
     "@octokit/rest": "^18.1.1",
     "dotenv": "^8.2.0"
+  },
+  "engines": {
+    "node": "16"
   }
 }
